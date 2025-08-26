@@ -1,2 +1,2 @@
-chuoiKyTu = input('Nhập tham số: ')
-print('Tham số vừa nhập là:', chuoiKyTu)
+chuoiKyTu = input('Nhap tham so: ')
+print('Tham so vua nhap la:', chuoiKyTu)
