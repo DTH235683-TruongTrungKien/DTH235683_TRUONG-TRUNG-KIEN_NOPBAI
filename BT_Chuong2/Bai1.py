@@ -1,8 +1,5 @@
-x = float(input("Nhap so tien: "))
-lai = 0
-for i in range(18):
-    lai+=x*(0.6/100)
-    if((i+1)%6 == 0):
-        x+=lai
-        lai = 0
-print(x)
+r = float(input("Nhap ban kinh r: "))
+perimeter = 2 * 3.14 * r
+area = 3.14 * r**2
+print("Perimeter: ", perimeter)
+print("Area: ", area)

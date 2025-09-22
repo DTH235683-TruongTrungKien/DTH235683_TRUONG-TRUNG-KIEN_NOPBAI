@@ -1,18 +1,9 @@
-def calculator(a, b, ch):
-    match ch:
-        case '+':
-            return a + b
-        case '-':
-            return a - b
-        case '*':
-            return a * b
-        case '/':
-            return a / b
-        case _:
-            return "Sai cu phap"
-            
-a = int(input("Nhap so a: "))
-b = int(input("Nhap so b: "))
-ch = input("Nhap phep tinh: ")
-kq = calculator(a, b, ch)
-print("Ket qua: ", kq)
+seconds = int(input("Nhap so giay: "))
+hour = seconds // 3600
+minute = (seconds % 3600) // 60
+second = (seconds % 3600) % 60
+format = "AM"
+if(hour > 12):
+    hour -= 12
+    format = "PM"
+print(hour, ":", minute, ":", second, format)
