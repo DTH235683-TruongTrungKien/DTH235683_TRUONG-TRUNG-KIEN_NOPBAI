@@ -1,0 +1,1 @@
+t, text="Hệ số B: ").grid(ro

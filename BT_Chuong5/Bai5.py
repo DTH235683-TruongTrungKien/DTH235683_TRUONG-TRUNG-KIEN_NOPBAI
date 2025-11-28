@@ -1,0 +1,18 @@
+def demKyTu(s):
+    upper = sum(1 for c in s if c.isupper())
+    lower = sum(1 for c in s if c.islower())
+    digit = sum(1 for c in s if c.isdigit())
+    special = sum(1 for c in s if not (c.isalnum() or c.isspace()))
+    space = sum(1 for c in s if c.isspace())
+    vowel = sum(1 for c in s if c in "aeiouAEIOU")
+    consonant = sum(1 for c in s if c not in "aeiouAEIOU")
+    print("Chu in hoa: ", upper)
+    print("Chu thuong: ", lower)
+    print("Chu so: ", digit)
+    print("Ky tu dac biet: ", special)
+    print("Khoang trang: ", space)
+    print("Nguyen am: ", vowel)
+    print("Phu am: ", consonant)
+
+s = input("Nhap vao 1 chuoi: ")
+demKyTu(s)
